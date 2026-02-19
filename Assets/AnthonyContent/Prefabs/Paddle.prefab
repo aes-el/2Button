@@ -105,8 +105,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d441cd187c5240bad81fd9d6b78ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  speed: 8
+  speed: 15
   maximumX: 8
+  spaceBar: {fileID: 0}
 --- !u!60 &1105942396935177812
 PolygonCollider2D:
   m_ObjectHideFlags: 0

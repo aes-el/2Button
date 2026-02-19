@@ -256,6 +256,20 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &808998416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1515ab76e54f068e2f2207940fab32, type: 3}
+  m_Name: Player/Jump
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
+  m_Asset: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_ActionId: f1ba0d36-48eb-4cd5-b651-1c94a6531f70
 --- !u!1001 &3039809647958323693
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -418,6 +432,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2414642622490969256, guid: 4c0ca2d13b01b9d419df6ebcc8c9a9cf, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2414642622490969256, guid: 4c0ca2d13b01b9d419df6ebcc8c9a9cf, type: 3}
+      propertyPath: spaceBar
+      value: 
+      objectReference: {fileID: 808998416}
     - target: {fileID: 3526901753966179855, guid: 4c0ca2d13b01b9d419df6ebcc8c9a9cf, type: 3}
       propertyPath: m_Name
       value: Paddle
