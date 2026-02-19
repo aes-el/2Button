@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     public Vector2Int size;
-    public Vector2Int offset;
+    public Vector2 offset;
     public GameObject brickPrefab;
     public Gradient gradient;
 
