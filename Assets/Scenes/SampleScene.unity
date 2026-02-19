@@ -365,6 +365,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 790867184301001271, guid: d0b493832b96a8b47b25601bf8ccb237, type: 3}
+      propertyPath: m_Color.b
+      value: 0.83215666
+      objectReference: {fileID: 0}
+    - target: {fileID: 790867184301001271, guid: d0b493832b96a8b47b25601bf8ccb237, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 790867184301001271, guid: d0b493832b96a8b47b25601bf8ccb237, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3207947625149544380, guid: d0b493832b96a8b47b25601bf8ccb237, type: 3}
       propertyPath: m_Name
       value: Bouncy Ball
