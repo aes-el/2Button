@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelGenerator : MonoBehaviour
 {
@@ -17,22 +18,29 @@ public class LevelGenerator : MonoBehaviour
             {
                 // automate brick placement
                 GameObject newBrick = Instantiate(brickPrefab, transform);
-                newBrick.transform.position = transform.position + new Vector3((float)((size.x-1)*.5f-i) * offset.x, j * offset.y, 0);
+                newBrick.transform.position = transform.position +
+                                              new Vector3((float)((size.x - 1) * .5f - i) * offset.x, j * offset.y, 0);
                 //brick color change
-                newBrick.GetComponent<SpriteRenderer>().color = gradient.Evaluate((float)j/(size.y - 1));
+                newBrick.GetComponent<SpriteRenderer>().color = gradient.Evaluate((float)j / (size.y - 1));
             }
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void restart()
     {
-        
-    }
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }

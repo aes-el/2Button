@@ -17,10 +17,10 @@ public class UI : MonoBehaviour
 //    public GameObject youWinPanel;
 //    int brickCount;
 
-    // void Start()
-    // {
-    //     brickCount = FindObjectsOfType<LevelGenerator>().transform.childCount
-    // }
+    void Start()
+    {
+        //brickCount = FindObjectsOfType<LevelGenerator>().transform.childCount;
+    }
     //
     // private void Update()
     // {
