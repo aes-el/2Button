@@ -285,8 +285,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce382af8e63e94a7fa7fe008e9244382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
-  size: {x: 10, y: 5}
-  offset: {x: 2, y: 1}
+  size: {x: 19, y: 8}
+  offset: {x: 1.1, y: 0.6}
   brickPrefab: {fileID: 2969810149369170433}
   gradient:
     serializedVersion: 2
@@ -327,7 +327,7 @@ Transform:
   m_GameObject: {fileID: 2091128007}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13492, y: -0.0287, z: 0}
+  m_LocalPosition: {x: -0.13492, y: 0.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
