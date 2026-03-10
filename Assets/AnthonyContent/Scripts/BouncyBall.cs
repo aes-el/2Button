@@ -21,7 +21,7 @@ public class BouncyBall : MonoBehaviour
         levelGenerator = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
         rb = GetComponent<Rigidbody2D>();
         
-        brickCount = FindObjectsOfType<LevelGenerator>().transform.childCount;
+        //brickCount = FindObjectsOfType<LevelGenerator>().transform.childCount;
         
     }
 
