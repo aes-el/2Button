@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
@@ -12,17 +13,20 @@ public class BouncyBall : MonoBehaviour
     public GameObject[] livesImage;
     public GameObject gameOverPanel;
     public GameObject youWinPanel;
-    int brickCount;
+    public List <GameObject> brickCount = new List <GameObject>();
     [SerializeField] private LevelGenerator levelGenerator;
+    public GameObject myLevelGenerator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        levelGenerator = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
+        //levelGenerator = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
         rb = GetComponent<Rigidbody2D>();
-        
-        //brickCount = FindObjectsOfType<LevelGenerator>().transform.childCount;
-        
+        for (int i = 0; i <levelGenerator.size.x * levelGenerator.size.y; i++)
+        {
+            brickCount.Add(GameObject.FindWithTag("Brick"));
+        }
+        Debug.Log(brickCount.Count);
     }
 
     // Update is called once per frame
@@ -63,12 +67,13 @@ public class BouncyBall : MonoBehaviour
             Destroy(collision.gameObject);
             score+=10;
             scoreTxt.text = score.ToString("0000");
-            brickCount--;
-            if(brickCount <= 0)
+            brickCount.Remove(collision.gameObject);
+            if(brickCount.Count <= 0)
             {
                 youWinPanel.SetActive(true);
                 Time.timeScale = 0;
             }
+            Debug.Log(brickCount.Count);
          }
     }
     void GameOver()
