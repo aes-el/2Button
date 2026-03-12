@@ -2370,7 +2370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce382af8e63e94a7fa7fe008e9244382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelGenerator
-  size: {x: 12, y: 8}
+  size: {x: 12, y: 6}
   offset: {x: 1.1, y: 0.6}
   brickPrefab: {fileID: 6141902231988414121, guid: 233e46ed6ba8d4812b0f4fc2b9e589c2, type: 3}
   gradient:
